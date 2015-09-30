@@ -1,0 +1,22 @@
+___________________________________________
+Main Functions:
+
+1) loadopf: - Load an OPF file.
+2) load: -Currently unused.
+3) skybox: - Set/Mod/Load/Unload the Skybox.
+4) mod: - Modify an object. DEPRECIATED?
+5) list: - List a set objects.
+6) setent: - DEPRECIATED?
+7) exit - Exit the console.
+8) term - Terminates program safely.
+
+Proper Syntax:
+   [FUNCTION]:[OPTION1]:[OPTION2]
+
+Example:
+   skybox:define:skybox1
+
+Type [FUNCTION]:help for more info
+on each functions options.
+___________________________________________
+

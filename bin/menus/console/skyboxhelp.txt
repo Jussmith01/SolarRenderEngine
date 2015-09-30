@@ -1,0 +1,32 @@
+___________________________________________
+Skybox Function Help Menu:
+
+1) Define a skybox with textures [filename]
+       Syntax - define:[filename]
+
+2) Delete the skybox completely.
+       Syntax - delete
+
+3) Delete the skybox from GPU only.
+       Syntax - deletegpu
+
+4) Load the skybox to the GPU.
+       Syntax - loadgpu
+
+5) Delete the skybox from the CPU. Must be
+   deleted from the GPU first. Calling both
+   is equivalent to calling delete function.
+       Syntax - deletecpu
+
+6) Load a skybox to the CPU with textures 
+   [filename]. Calling this then loadgpu 
+   is equivalent to calling define.
+       Syntax - loadcpu:[filename]
+
+Proper Syntax:
+   [FUNCTION]:[OPTION1]:[OPTION2]
+
+Example:
+   skybox:define:skybox1
+___________________________________________
+

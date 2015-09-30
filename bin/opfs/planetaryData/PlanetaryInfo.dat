@@ -1,0 +1,31 @@
+#**************************************
+#This file stores habitability info
+#**************************************
+#For Planets and Moons
+#Habitability Scales from 0 to 5
+#0 is inhabitable - Gas Giant
+#1 is inhabitable - Molten World
+#2 is Strongly Acidic world
+#3 is Slightly Acidic world
+#4 is Thick Atmosphere World
+#5 is Thin Atmosphere World
+#6 is Water World
+#7 is Ocianic World
+#8 is Terran Wold
+#
+#Example Entry:
+#planet:0:5
+#
+#planet means type planet
+#0 means planet 0 from planets OPF
+#5 in the habitability value
+#
+#Another Eaxmple:
+#moon:1:4
+#**************************************
+planet:0:7
+planet:1:0
+planet:2:1
+moon:0:5
+moon:1:5
+moon:2:1

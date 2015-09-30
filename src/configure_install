@@ -1,0 +1,63 @@
+Executable:SolarRenderEngine
+
+$c++:
+	compiler:
+		g++
+	flags:
+		-Wall -std=c++0x -L/usr/local/lib -L/usr/include/glm/ -I/usr/include/freetype2 -I/usr/local/include -lglfw3 -lXinerama -lXcursor -lX11 -lXxf86vm -lXrandr -lpthread -fopenmp -lXi -lGL -lGLU -lGLEW -lglut -lSOIL -lfreetype
+        dir:
+                program_init/tools/
+        files:
+                fileTools
+        dir:
+                program_init/basicStructures/
+        files:
+                gameStructs
+        dir:
+                program_init/EntityControllers/SolarSystemClass/
+        files:
+                SolarSystemManagement
+                SolarSystemPeriperals
+                SolarSystemPhysics
+        dir:
+                program_init/DrawController/
+        files:
+                DrawController
+        dir: 
+        	none  
+        files:
+        	main
+        dir:
+                program_init/objectControllers/
+        files:
+                objectController
+        dir:
+                program_init/
+        files:
+                proginit
+        dir:
+                program_init/engineHandlers/
+        files:
+                consoleHandeling
+                eventHandling
+		GLerrorHandling
+	DONE
+$ENDc++
+$cuda:
+	compiler:
+	flags:
+        dir: 
+        files:
+	DONE
+$ENDcuda
+$linkerflags:
+	compiler:
+		g++
+	flags:
+		-Wall -std=c++0x -L/usr/local/lib -L/usr/include/glm/ -L../lib -I../include -I/usr/local/freetype2 -I/usr/local/include
+	postflags:
+		-lglfw3 -lXinerama -lXcursor -lX11 -lXxf86vm -lXrandr -lpthread -fopenmp -lXi -lGL -lGLU -lGLEW -lglut -lSOIL -lfreetype
+	DONE
+$ENDlinkerflags
+$END OF FILE$
+

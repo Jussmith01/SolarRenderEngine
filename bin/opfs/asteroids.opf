@@ -1,0 +1,68 @@
+#**********************************************
+#	    EXAMPLE opf INPUT FILE
+#**********************************************
+#&BEGINOBJECT:House1:{
+#objfile=house.obj
+#objinitprops=house.prop
+#nummesh=3
+#meshprop=mesh1.prop
+#meshshader=std_light_4
+#meshtexdiffuse=[dM1texture1.png,dM1texture2.png]
+#meshtexspecular=[sM1texture1.png,sM1texture2.png]
+#meshprop=mesh2.prop
+#meshshader=std_light_4
+#meshtexdiffuse=[dM2texture1.png]
+#meshtexspecular=[sM2texture1.png]
+#meshprop=mesh3.prop
+#meshshader=std_light_4
+#meshtexdiffuse=[dM3texture1.png,dM3texture2.png]
+#meshtexspecular=[sM3texture1.png,sM3texture2.png]
+#&ENDOBJECT:}
+#meshmap layout
+#[x,y,z,i,j,k]
+#	x = diffuse
+#	y = specular
+#	z = glow
+#	i = overlay
+#	j = alphaoverlay
+#	k = bump
+#You must use the proper shader for the above 
+#to work properly.
+#**********************************************
+&NUM_OBJS=3
+
+#1
+&BEGINOBJECT:
+objname=AsteroidLP
+objfile=asteroidLP.obj
+optlinfo=normal
+nummesh=1
+meshlight=no
+meshshader=4
+meshmaps=[1,1,0,0,0,0,1,1]
+meshtex=asteroid1
+&ENDOBJECT:
+
+&BEGINOBJECT:
+objname=testCube
+objfile=testCube.obj
+optlinfo=normal
+nummesh=1
+meshlight=no
+meshshader=4
+meshmaps=[1,1,0,0,0,0,1,1]
+meshtex=testCube
+&ENDOBJECT:
+
+&BEGINOBJECT:
+objname=AsteroidHP
+objfile=asteroid1.obj
+optlinfo=normal
+nummesh=1
+meshlight=no
+meshshader=4
+meshmaps=[1,1,0,0,0,0,1,1]
+meshtex=asteroid1
+&ENDOBJECT:
+
+&ENDFILE
