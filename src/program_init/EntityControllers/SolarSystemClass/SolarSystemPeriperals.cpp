@@ -84,8 +84,8 @@ void SolarSystem::GenRandomMoon(objPropController &MONSOPC,int PLTID,int MONID,i
         //Set OPCID
         moons.OPCID.push_back(MONSOPCID);
         //Choose a Random Moon from the Moons OPC
-        //moons.OBJID.push_back(Rand.GenRandInt(MONSOPC.ObjLib.size()-1,0));
-        moons.OBJID.push_back(Rand.GenRandInt(0,0));
+        moons.OBJID.push_back(Rand.GenRandInt(MONSOPC.ObjLib.size()-1,1));
+        //moons.OBJID.push_back(Rand.GenRandInt(0,0));
         //moons.OBJID.push_back(0);
         //Choose a Random Scale
         moons.Scale.push_back((float)Rand.GenRandInt(250,50)/100.0f);

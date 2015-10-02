@@ -57,7 +57,7 @@ void SolarSystem::GenerateSolarSystem(vector<objPropController> &OPC,int Size,in
 
 		//Build an asteroid belt
 		//GenRandomAsteroids(OPC[ASTSOPCID],sun.Position,1000);
-		GenRandomAsteroids(OPC[ASTSOPCID],1000);
+		GenRandomAsteroids(OPC[ASTSOPCID],10000);
 };
 
 //******************************************//
